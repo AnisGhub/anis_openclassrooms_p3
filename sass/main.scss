@@ -1,3 +1,24 @@
-body{
-  background: red;
-}
+// utils
+@import "./utils/variables";
+// @import "./utils/functions";
+// @import "./utils/mixins";
+// @import "./utils/extensions";
+
+// base
+@import "./base/base";
+@import "./base/typography";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+// @import "./layout/container";
+
+// pages
+@import "./pages/home";
+@import "./pages/resturant";
+
+// components
+@import "./components/button";
+@import "./components/card";
+
+

@@ -1,0 +1,20 @@
+// main button
+.btn{
+    display: block;
+    padding: 15px 22px;
+    border: unset;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px #88888B;
+    background: linear-gradient(160deg,$colour-secondary,$colour-primary);
+    text-align: center;
+    color: $colour-white;
+    transition: 0.5s;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0px 3px 10px 2px #88888b;
+        background: linear-gradient(160deg, rgb(255 121 218 / 80%), rgb(147 86 220 / 80%))
+    }
+}
+// bookmark
+
+ 
