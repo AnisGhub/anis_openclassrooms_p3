@@ -1,0 +1,85 @@
+// location section
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 14px 13px 0;
+    background-color: $bg-grey;
+    &__icon{
+        margin: 0 10px 0 -5px;
+    }
+} 
+
+// search section
+.search-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    text-align: center;
+    background-color: $bg-lightgrey;
+    &__title,&__quote{
+        margin-bottom: 10px;
+    }
+}
+
+//features section
+.features-section{
+    padding: 40px 15px;
+    &__header{
+        margin-bottom: 20px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        counter-reset: counter;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 90%;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 0 2px 7px #ababab;
+        background-color: $bg-lightgrey;
+        counter-increment: counter ;
+    }
+    &__item::before{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+        left: -15px;
+        width: 30px;
+        height: 30px;
+        content: counter(counter);
+        background: $colour-primary;
+        border-radius: 100%;
+        color: white;
+    }
+    &__item:hover{
+        background-color: #f5edff;
+        i{
+            color: $colour-primary;
+        }
+    }
+    &__icon{
+        margin: 0 10px;
+    }
+}
+//restaurants section
+.restaurants-section{
+    padding: 40px 15px;
+    background-color: $bg-lightgrey;
+    &__card-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
