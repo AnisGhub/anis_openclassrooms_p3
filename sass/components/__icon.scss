@@ -1,0 +1,37 @@
+// main icon size
+i{
+    font-size: 16px;
+}
+
+//TODO a deplacer ptr dans mixin
+//bookmark favorite
+
+.fa-heart{
+    font-size: 20px;
+    // transition: 0.5s;
+    &:hover{
+        font-weight: 900;
+        color: $colour-primary;
+    }
+}
+// .hidden{
+//     display: none;
+// }
+// &:hover{
+//     .show{
+//         display: none;
+//     }
+//     .hidden{
+//         display: block;
+//         transition: 0.5s ease-in-out;
+//         transition-property: display;
+//     }
+// }
+
+
+// icon 
+// icon filled 
+// quand on survole icon icon filled prends sa place 
+
+// ou quand on survole icon filled elle se rempli 
+ 
