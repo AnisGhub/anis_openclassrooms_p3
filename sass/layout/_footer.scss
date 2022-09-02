@@ -1,0 +1,21 @@
+.footer{
+    padding: 30px 15px;
+    background-color: $bg-darkgrey;
+    color: $colour-white;
+    &__header h2{
+        font-family: 'Shrikhand','Roboto';
+        font-weight: 100;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    &__infos{
+        list-style: none;
+        padding-left: 20px;
+    }
+    &__item{
+        margin-bottom: 5px;
+    }
+    span{
+        margin-right: 10px;
+    }
+}

@@ -31,9 +31,6 @@
         margin-bottom: 20px;
     }
     &__list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         list-style: none;
         counter-reset: counter;
     }
@@ -41,7 +38,8 @@
         display: flex;
         align-items: center;
         position: relative;
-        width: 90%;
+        width: 97.5%;
+        margin: 0 10px;
         margin-bottom: 20px;
         padding: 20px;
         border-radius: 25px;
@@ -77,9 +75,7 @@
 .restaurants-section{
     padding: 40px 15px;
     background-color: $bg-lightgrey;
-    &__card-list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &__header{
+        margin-bottom: 20px;
     }
 }
