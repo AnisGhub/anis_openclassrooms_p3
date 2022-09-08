@@ -1,0 +1,28 @@
+// icon fill on hover component
+.bookmark{
+    position: relative;
+    i{
+        font-size: 20px;
+        position: absolute;
+        top: -15px;
+        left: -30px;
+    }
+    &__hover{
+        transition: opacity 0.5s ease-in;
+    }
+    &__hidden{
+        color: $colour-primary;
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+    }
+    &:hover{
+        .bookmark__hover{
+            opacity: 0;
+        }
+        .bookmark__hidden{
+            opacity: 1;
+        }
+    }
+
+}
+ 

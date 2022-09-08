@@ -15,7 +15,23 @@ body {
     box-sizing: border-box;
 }
 
+// container 
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container--sections{
+    //responsive
+    @include for-tablet-landscape-up{
+        display: flex;
+    }
+}
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }

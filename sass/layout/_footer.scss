@@ -7,6 +7,10 @@
         font-weight: 100;
         margin-bottom: 10px;
         padding-left: 20px;
+        @include for-tablet-portrait-up{
+            margin: 0 100px 0 0;
+            padding: unset;
+        }
     }
     &__infos{
         list-style: none;
@@ -17,5 +21,10 @@
     }
     span{
         margin-right: 10px;
+    }
+    @include for-tablet-portrait-up{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
