@@ -33,95 +33,106 @@
             </span>
             <h3 class="location__title">Paris, Belleville</h3>
         </div>
-        <!-- search -->
-        <section class="search-section">
-            <h2 class="search-section__title">Réservez le menu qui<br/> vous convient</h2>
-            <p class="search-section__quote">Découvrez des restaurants d'exception, <br/>séléctionnés par nos soins.</p>
-            <button class="btn">Explorer nos restaurants</button>
-        </section>
-        <!-- features -->
-        <section class="features-section">
-            <div class="features-section__header">
-                <h2>Foctionnement</h2>
-            </div>
-            <ol class="features-section__list">
-                <li class="features-section__item"><span class="features-section__icon"><i class="fa-solid fa-mobile-screen-button"></i></span>Choisissez un restaurant</li>
-                <li class="features-section__item"><span class="features-section__icon"><i class="fa-solid fa-list"></i></span>Composez votre menu</li>
-                <li class="features-section__item"><span class="features-section__icon"><i class="fa-solid fa-store"></i></span>Dégustez au restaurant</li>
-            </ol>
-        </section>
-        <!-- restaurants -->
-        <section class="restaurants-section">
-            <div class="restaurants-section__header">
-                <h2>Restaurants</h2>
-            </div>
-            <div class="restaurants-section__card-list">
-                <a href="palette_du_gôut.html" class="card">
-                    <div class="card__img">
-                        <img src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du gôut">
-                        <span class="card__tag">Nouveau</span>
-                    </div>
-                    <div class="card__content">
-                        <div class="card__text">
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
+        <!-- container section -->
+        <div class="container--sections">
+            <!-- search -->
+            <section class="search-section">
+                <h2 class="search-section__title">Réservez le menu qui<br/> vous convient</h2>
+                <p class="search-section__quote">Découvrez des restaurants d'exception, <br/>séléctionnés par nos soins.</p>
+                <button class="btn">Explorer nos restaurants</button>
+            </section>
+            <!-- features -->
+            <section class="features-section">
+                <div class="features-section__header">
+                    <h2>Fonctionnement</h2>
+                </div>
+                <!-- todo: BEM pas respecter a revoir -->
+                <ol class="features-section__list">
+                    <li class="features-section__item"><span class="features-section__icon"><i class="fa-solid fa-mobile-screen-button"></i></span>Choisissez un restaurant</li>
+                    <li class="features-section__item"><span class="features-section__icon"><i class="fa-solid fa-list"></i></span>Composez votre menu</li>
+                    <li class="features-section__item"><span class="features-section__icon"><i class="fa-solid fa-store"></i></span>Dégustez au restaurant</li>
+                </ol>
+            </section>
+        </div>
+        <!-- container-->
+        <div class="container">
+            <!-- restaurants -->
+            <section class="restaurants-section">
+                <div class="restaurants-section__header">
+                    <h2>Restaurants</h2>
+                </div>
+                <div class="restaurants-section__list">
+                    <a href="palette_du_gôut.html" class="card">
+                        <div class="card__img">
+                            <img src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du gôut">
+                            <span class="card__tag">Nouveau</span>
                         </div>
-                        <div class="bookmark">
-                            <i class="fa-regular fa-heart"></i>
-                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="card__content">
+                            <div class="card__text">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <!-- icon hover fill component -->
+                            <span class="bookmark">
+                                <i class="fa-regular fa-heart bookmark__hover"></i>
+                                <i class="fa-solid fa-heart bookmark__hidden"></i>
+                            </span>
                         </div>
-                    </div>
-                </a>
-                <a href="note_enchantee.html" class="card">
-                    <div class="card__img">
-                        <img src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                        <span class="card__tag">Nouveau</span>
-                    </div>
-                    <div class="card__content">
-                        <div class="card__text">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
+                    </a>
+                    <a href="note_enchantee.html" class="card">
+                        <div class="card__img">
+                            <img src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                            <span class="card__tag">Nouveau</span>
                         </div>
-                        <div class="bookmark">
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="card__content">
+                            <div class="card__text">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <span class="bookmark">
+                                <i class="fa-regular fa-heart bookmark__hover"></i>
+                                <i class="fa-solid fa-heart bookmark__hidden"></i>
+                            </span>
                         </div>
-                    </div>
-                </a>
-                <a href="a_la_française.html" class="card">
-                    <div class="card__img">
-                        <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__text">
-                            <h3>A la française</h3>
-                            <p>Cité Rouge</p>
+                    </a>
+                    <a href="a_la_française.html" class="card">
+                        <div class="card__img">
+                            <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
                         </div>
-                        <div class="bookmark">
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="card__content">
+                            <div class="card__text">
+                                <h3>A la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <span class="bookmark">
+                                <i class="fa-regular fa-heart bookmark__hover"></i>
+                                <i class="fa-solid fa-heart bookmark__hidden"></i>
+                            </span>
                         </div>
-                    </div>
-                </a>
-                <a href="delice_des_sens.html" class="card">
-                    <div class="card__img">
-                        <img src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le délice des sens">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__text">
-                            <h3>le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
+                    </a>
+                    <a href="delice_des_sens.html" class="card">
+                        <div class="card__img">
+                            <img src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le délice des sens">
                         </div>
-                        <div class="bookmark">
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="card__content">
+                            <div class="card__text">
+                                <h3>le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <span class="bookmark">
+                                <i class="fa-regular fa-heart bookmark__hover"></i>
+                                <i class="fa-solid fa-heart bookmark__hidden"></i>
+                            </span>
                         </div>
-                    </div>
-                </a>
-            </div>
-        </section>
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
     <!-- footer -->
     <footer class="footer">
         <div class="footer__header">
-           <h2>ohmyfood</h2>
+            <h2>ohmyfood</h2>
         </div>
         <ul class="footer__infos">
             <li class="footer__item"><span><i class="fas fa-utensils icone-footer"></i></span><a href="#" onclick="return false;">Proposer un restaurant</a></li>

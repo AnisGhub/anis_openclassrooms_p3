@@ -1,7 +1,7 @@
 // utils
 @import "./utils/variables";
+@import "./utils/mixins";
 // @import "./utils/functions";
-// @import "./utils/mixins";
 // @import "./utils/extensions";
 
 // base
@@ -20,7 +20,7 @@
 // components
 @import "./components/button";
 @import "./components/card";
-@import "./components/_icon";
+@import "./components/_bookmark";
 @import "./components/menu";
 @import "./components/_loader"
 

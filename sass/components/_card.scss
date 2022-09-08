@@ -32,4 +32,9 @@
         padding: 18px;
         line-height: 19px;
     }
+    //responsive
+    @include for-tablet-landscape-up{
+        flex: 0 30%;
+        margin: 20px;
+     }
 }
