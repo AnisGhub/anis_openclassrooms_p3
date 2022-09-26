@@ -1,28 +1,80 @@
-// icon fill on hover component
-.bookmark{
-    position: relative;
-    i{
-        font-size: 20px;
-        position: absolute;
-        top: -15px;
-        left: -30px;
-    }
-    &__hover{
-        transition: opacity 0.5s ease-in;
-    }
-    &__hidden{
-        color: $colour-primary;
-        opacity: 0;
-        transition: opacity 0.5s ease-in;
-    }
-    &:hover{
-        .bookmark__hover{
-            opacity: 0;
-        }
-        .bookmark__hidden{
-            opacity: 1;
-        }
-    }
+// // icon fill on hover component
+// .bookmark{
+//     position: relative;
+//     i{
+//         font-size: 20px;
+//         position: absolute;
+//         top: -15px;
+//         left: -30px;
+//     }
+//     &__hover{
+//         transition: opacity 0.5s ease-in;
+//     }
+//     &__hidden{
+//         color: $colour-primary;
+//         opacity: 0;
+//         transition: opacity 0.5s ease-in;
+//     }
+//     &:hover{
+//         .bookmark__hover{
+//             opacity: 0;
+//         }
+//         .bookmark__hidden{
+//             opacity: 1;
+//         }
+//     }
 
+// }
+
+.bookmark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__input{
+        visibility: hidden;
+    }
+    &__input:checked + .bookmark__label .bookmark__svg path, &__input:hover + .bookmark__label .bookmark__svg path {
+        animation: stroke-animation 1s ease-in-out forwards;
+    }
+    &__label{
+        cursor: pointer; 
+    }
+    &__svg{
+        stroke: #000;
+        stroke-width: 30px;
+        overflow: visible;
+        path {
+            fill: transparent;
+            stroke-dashoffset: 0;
+            stroke-dasharray: 1550;
+            transform-origin: center;
+        }
+    }
 }
  
+@keyframes stroke-animation {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    30% {
+      stroke-dashoffset: 1550;
+    }
+    60% {
+      stroke-dashoffset: 3100;
+      fill: transparent;
+      transform: scale(1);
+    }
+    80% {
+      fill: $colour-primary;
+      stroke: $colour-primary;
+      transform: scale(1.2);
+    }
+    90% {
+      transform: scale(1);
+    }
+    100% {
+      stroke-dashoffset: 3100;
+      stroke: $colour-primary;
+      fill: $colour-primary;
+    }
+  }
