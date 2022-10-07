@@ -23,6 +23,9 @@ body {
   margin: 0 auto;
 }
 
+.container--sections {
+  max-width: none;
+}
 @media (min-width: 900px) {
   .container--sections {
     display: flex;
@@ -302,6 +305,7 @@ i {
   background: linear-gradient(160deg, #FF79DA, #9356DC);
   text-align: center;
   color: #fff;
+  transition: 0.3s ease-in-out;
 }
 .btn:hover {
   cursor: pointer;
@@ -452,7 +456,7 @@ i {
   right: -30px;
   z-index: 9999;
   transform: translateX(0px) rotate(-360deg);
-  transition: transform 0.8s;
+  transition: transform 0.4s;
 }
 .menu__label {
   display: flex;
@@ -467,6 +471,7 @@ i {
 }
 .menu__title {
   width: calc(100% - 10px);
+  transition: width 0.3s;
 }
 .menu__title h2, .menu__title p {
   white-space: nowrap;
@@ -480,7 +485,7 @@ i {
   right: -130px;
   width: 135px;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.4s;
 }
 .menu__price {
   flex: 1.2;

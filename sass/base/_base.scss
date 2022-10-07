@@ -21,6 +21,7 @@ body {
     margin: 0 auto;
 }
 .container--sections{
+    max-width: none;
     //responsive
     @include for-tablet-landscape-up{
         display: flex;

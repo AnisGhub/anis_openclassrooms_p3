@@ -51,7 +51,7 @@
        right: -30px;
        z-index: 9999;
        transform: translateX(0px) rotate(-360deg);
-       transition: transform 0.8s;
+       transition: transform 0.4s;
     }
     &__label{
         display: flex;
@@ -72,6 +72,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+        transition: width 0.3s;
     }
     &__animated{
         display: flex;
@@ -80,7 +81,7 @@
         right: -130px;
         width: 135px;
         height: 100%;
-        transition: transform 0.8s;
+        transition: transform 0.4s;
     }
     &__price{
         flex: 1.2;
