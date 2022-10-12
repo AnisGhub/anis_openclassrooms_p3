@@ -93,7 +93,7 @@ i {
   padding-left: 20px;
 }
 .footer__item {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .footer span {
   margin-right: 10px;
@@ -363,8 +363,13 @@ i {
 .bookmark__input {
   visibility: hidden;
 }
-.bookmark__input:checked + .bookmark__label .bookmark__svg path, .bookmark__input:hover + .bookmark__label .bookmark__svg path {
+.bookmark__input:checked + .bookmark__label .bookmark__svg path {
   animation: stroke-animation 1s ease-in-out forwards;
+}
+@media (hover: hover) {
+  .bookmark__input:not(:checked):hover + .bookmark__label .bookmark__svg path {
+    animation: stroke-animation 1s ease-in-out both;
+  }
 }
 .bookmark__label {
   cursor: pointer;

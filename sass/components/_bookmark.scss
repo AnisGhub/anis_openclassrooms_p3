@@ -33,8 +33,13 @@
     &__input{
         visibility: hidden;
     }
-    &__input:checked + .bookmark__label .bookmark__svg path, &__input:hover + .bookmark__label .bookmark__svg path {
+    &__input:checked + .bookmark__label .bookmark__svg path{
         animation: stroke-animation 1s ease-in-out forwards;
+    }
+    &__input:not(:checked):hover + .bookmark__label .bookmark__svg path{
+      @media (hover: hover) {
+        animation: stroke-animation 1s ease-in-out both;
+      }
     }
     &__label{
         cursor: pointer; 
