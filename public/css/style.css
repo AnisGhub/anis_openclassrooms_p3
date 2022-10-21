@@ -475,13 +475,19 @@ i {
   cursor: pointer;
 }
 .menu__title {
+  display: block;
   width: calc(100% - 10px);
   transition: width 0.3s;
 }
-.menu__title h2, .menu__title p {
+.menu__title span {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.menu__desc {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .menu__animated {
   display: flex;

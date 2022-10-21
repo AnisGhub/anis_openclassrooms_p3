@@ -66,13 +66,19 @@
         }
     }
     &__title{
+        display: block;
         width: calc(100% - 10px);
-        h2,p{
+        transition: width 0.3s;
+        span{
+            display: block;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        transition: width 0.3s;
+    }
+    &__desc{
+        font-size: 1.5em;
+        font-weight: bold;
     }
     &__animated{
         display: flex;
