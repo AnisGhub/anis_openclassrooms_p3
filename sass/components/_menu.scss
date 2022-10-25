@@ -69,6 +69,11 @@
         display: block;
         width: calc(100% - 10px);
         transition: width 0.3s;
+        font-size: 0.96em;
+        //responsive
+        @include for-tablet-portrait-up{
+            font-size: unset;
+        }
         span{
             display: block;
             white-space: nowrap;
@@ -77,8 +82,12 @@
         }
     }
     &__desc{
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: bold;
+        //responsive
+        @include for-tablet-portrait-up{
+            font-size: 1.5em;
+        }
     }
     &__animated{
         display: flex;
@@ -94,11 +103,13 @@
         display: flex;
         line-height: 108px;
     }
-    &__slide{
+    &__animated::after{
+        content: '';
         flex: 2;
         background-color: #99E2D0;
         border-radius: 0 10px 10px 0;
     }
+    
 }
 
 // displaying menu gradually animation 

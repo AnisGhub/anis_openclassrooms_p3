@@ -70,8 +70,8 @@
       transform: scale(1);
     }
     80% {
-      fill: $colour-primary;
-      stroke: $colour-primary;
+      fill: url(#gradient);
+      stroke: url(#gradient);
       transform: scale(1.2);
     }
     90% {
@@ -79,7 +79,7 @@
     }
     100% {
       stroke-dashoffset: 3100;
-      stroke: $colour-primary;
-      fill: $colour-primary;
+      stroke: url(#gradient);
+      fill: url(#gradient);
     }
   }
