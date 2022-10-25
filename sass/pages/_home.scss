@@ -8,6 +8,10 @@
     &__icon{
         margin: 0 10px 0 -5px;
     }
+    &__title{
+        font-size: 20px;
+        font-weight: 600;
+    }
 } 
 
 // search section
@@ -63,7 +67,7 @@
     }
     &__item{
         display: flex;
-        align-items: center;
+        align-items: baseline;
         position: relative;
         margin: 0 10px;
         margin-bottom: 20px;
@@ -94,6 +98,7 @@
         }
     }
     &__icon{
+        width: 20px;
         margin: 0 10px;
     }
     //responsive

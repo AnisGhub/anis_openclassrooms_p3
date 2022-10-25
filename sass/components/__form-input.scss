@@ -11,24 +11,14 @@
     border-radius: 50%;
     background-color: #fff;
  }
- .radio-input::before{
+ .radio-input::before,.radio-input:checked::before{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 30px;
     height: 30px;
-    content: "\2714";
-    font-size: 25px;
-    // font-weight: bold;
-    color: $colour-tertiary;
- }
- .radio-input:checked::before{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    content: "\2714";
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
     font-size: 25px;
     font-weight: bold;
     color: $colour-tertiary;
